@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initDateTimeConstraints();
     initWhatsAppDynamicLink();
 
-    console.log('%cHeavenly Aura Spa', 'font-size: 24px; font-weight: bold; color: #A0617B; font-family: Cormorant Garamond, serif;');
-    console.log('%cLuxury wellness, delivered to your doorstep.', 'font-size: 14px; color: #C8997E; font-style: italic;');
+    console.log('%cHeavenly Aura Spa', 'font-size: 24px; font-weight: bold; color: #A75675; font-family: Cormorant Garamond, serif;');
+    console.log('%cLuxury wellness, delivered to your doorstep.', 'font-size: 14px; color: #D3A66C; font-style: italic;');
 });
 
 

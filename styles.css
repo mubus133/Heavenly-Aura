@@ -97,18 +97,18 @@ ul, ol {
 
 :root {
     /* BRAND COLORS (from logo analysis) */
-    --ivory: #F5EFE7;
-    --cream: #F9F5F0;
-    --cream-dark: #F0EBE3;
-    --rose: #A0617B;
-    --rose-light: #B8869B;
-    --rose-dark: #8B5468;
-    --caramel: #C8997E;
-    --caramel-light: #D4AB92;
-    --caramel-dark: #B8856B;
-    --taupe: #B39C8A;
-    --brown: #5C4A42;
-    --brown-dark: #3D2F2A;
+    --ivory: #FCF2E8;
+    --cream: #FFF8F1;
+    --cream-dark: #F2E4D8;
+    --rose: #A75675;
+    --rose-light: #C2808C;
+    --rose-dark: #88445F;
+    --caramel: #D3A66C;
+    --caramel-light: #E1BD87;
+    --caramel-dark: #C58F5F;
+    --taupe: #A99582;
+    --brown: #5B4639;
+    --brown-dark: #3E2F27;
     --white: #FFFFFF;
     --black-soft: #1A1512;
 

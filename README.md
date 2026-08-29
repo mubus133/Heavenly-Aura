@@ -33,11 +33,13 @@ This website embodies a **premium luxury wellness brand** aesthetic, combining:
 ### Visual Identity
 The entire design is derived from the brand logo:
 
-- **Primary Colors:**
-  - Ivory/Cream (#F5EFE7, #F9F5F0)
-  - Dusty Rose (#A0617B)
-  - Warm Caramel (#C8997E)
-  - Soft Brown (#5C4A42)
+- **Primary Colors** from the official brand presentation:
+  - Ivory Veil (#FCF2E8)
+  - Blush Orchid (#C2808C)
+  - Rose Amethyst (#A75675)
+  - Champagne Glow (#D3A66C)
+  - Heavenly Gold (#C58F5F)
+  - Soft Brown (#5B4639)
 
 - **Typography:**
   - Display: Cormorant Garamond (elegant serif)
@@ -320,11 +322,13 @@ In `styles.css`, update CSS variables:
 
 ```css
 :root {
-    --ivory: #F5EFE7;
-    --cream: #F9F5F0;
-    --rose: #A0617B;
-    --caramel: #C8997E;
-    --brown: #5C4A42;
+    --ivory: #FCF2E8;
+    --cream: #FFF8F1;
+    --rose: #A75675;
+    --rose-light: #C2808C;
+    --caramel: #D3A66C;
+    --caramel-dark: #C58F5F;
+    --brown: #5B4639;
     /* ... */
 }
 ```

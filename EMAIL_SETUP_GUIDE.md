@@ -76,12 +76,12 @@ Paste this into the content editor:
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
         .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-        .header { background: #A0617B; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
+        .header { background: #A75675; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0; }
         .content { background: #f9f5f0; padding: 30px; border-radius: 0 0 8px 8px; }
-        .info-row { margin: 15px 0; padding: 12px; background: white; border-left: 4px solid #C8997E; border-radius: 4px; }
-        .label { font-weight: bold; color: #5C4A42; margin-right: 10px; }
+        .info-row { margin: 15px 0; padding: 12px; background: white; border-left: 4px solid #D3A66C; border-radius: 4px; }
+        .label { font-weight: bold; color: #5B4639; margin-right: 10px; }
         .value { color: #333; }
-        .footer { text-align: center; margin-top: 20px; padding-top: 20px; border-top: 2px solid #C8997E; color: #999; font-size: 12px; }
+        .footer { text-align: center; margin-top: 20px; padding-top: 20px; border-top: 2px solid #D3A66C; color: #999; font-size: 12px; }
     </style>
 </head>
 <body>
@@ -90,7 +90,7 @@ Paste this into the content editor:
             <h2>📅 NEW APPOINTMENT REQUEST</h2>
         </div>
         <div class="content">
-            <h3 style="color: #A0617B; margin-bottom: 20px;">Client Information</h3>
+            <h3 style="color: #A75675; margin-bottom: 20px;">Client Information</h3>
             
             <div class="info-row">
                 <span class="label">👤 Full Name:</span>
@@ -107,7 +107,7 @@ Paste this into the content editor:
                 <span class="value">{{email}}</span>
             </div>
             
-            <h3 style="color: #A0617B; margin: 30px 0 20px;">Appointment Details</h3>
+            <h3 style="color: #A75675; margin: 30px 0 20px;">Appointment Details</h3>
             
             <div class="info-row">
                 <span class="label">💆 Service:</span>
@@ -137,7 +137,7 @@ Paste this into the content editor:
             <div class="footer">
                 <p><strong>⏰ Submitted:</strong> {{submittedAt}}</p>
                 <p style="margin-top: 15px;">This is an automated notification from Heavenly Aura Spa website.</p>
-                <p style="color: #A0617B; font-weight: bold;">Please review and confirm this appointment manually.</p>
+                <p style="color: #A75675; font-weight: bold;">Please review and confirm this appointment manually.</p>
             </div>
         </div>
     </div>
