@@ -1,0 +1,14 @@
+# Heavenly Aura Spa Website
+
+node_modules/
+.DS_Store
+*.log
+.env
+.env.local
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/
+Thumbs.db
