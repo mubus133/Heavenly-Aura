@@ -130,11 +130,13 @@ function initMobileMenu() {
     const menuToggle = document.getElementById('menuToggle');
     const mobileOverlay = document.getElementById('mobileOverlay');
     const mobileLinks = document.querySelectorAll('.mobile-link');
+    const mobileButtons = document.querySelectorAll('.mobile-btn');
 
     if (!menuToggle || !mobileOverlay) return;
 
     menuToggle.addEventListener('click', toggleMenu);
 
+    // Handle mobile menu links
     mobileLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             if (link.getAttribute('href').startsWith('#')) {
@@ -145,9 +147,45 @@ function initMobileMenu() {
                 setTimeout(() => {
                     const target = document.querySelector(targetId);
                     if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
                     }
                 }, 400);
+            }
+        });
+    });
+
+    // Handle mobile menu buttons (Book Appointment, WhatsApp)
+    mobileButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const href = button.getAttribute('href');
+
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                closeMenu();
+
+                setTimeout(() => {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 400);
+            } else {
+                // External link (WhatsApp) - just close menu
+                closeMenu();
             }
         });
     });
