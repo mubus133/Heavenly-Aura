@@ -106,7 +106,7 @@
             </div>
             <div class="mobile-footer-info" style="--i: 9;">
                 <p>HOME-SERVICE SPA &bull; WE COME TO YOU</p>
-                <p><a href="tel:08056966140">08056966140</a></p>
+                <p><a href="tel:+2348056966140">+234 805 696 6140</a> &bull; <a href="tel:+2348082740475">+234 808 274 0475</a></p>
             </div>
         </div>
     </div>
@@ -877,7 +877,7 @@
                         </button>
                         <div class="faq-pane" id="faq-a5" role="region" aria-labelledby="faq-q5">
                             <div class="faq-pane-content">
-                                <p>You can reach us by phone, email or WhatsApp.</p>
+                                <p>You can reach us by phone at <a href="tel:+2348056966140">+234 805 696 6140</a> / <a href="tel:+2348082740475">+234 808 274 0475</a>, email at <a href="mailto:heavenlyauraspa.org@gmail.com">heavenlyauraspa.org@gmail.com</a>, or via WhatsApp.</p>
                             </div>
                         </div>
                     </div>
@@ -943,8 +943,19 @@
                                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             </div>
                             <div class="contact-detail">
-                                <span class="detail-label">PHONE</span>
-                                <a href="tel:08056966140" class="detail-val">08056966140</a>
+                                <span class="detail-label">PHONE (WhatsApp)</span>
+                                <a href="tel:+2348056966140" class="detail-val">+234 805 696 6140</a>
+                            </div>
+                        </div>
+
+                        <!-- Second Phone -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <span class="detail-label">PHONE (Call Only)</span>
+                                <a href="tel:+2348082740475" class="detail-val">+234 808 274 0475</a>
                             </div>
                         </div>
 
@@ -984,7 +995,8 @@
                     </div>
 
                     <div class="contact-actions-bar">
-                        <a href="tel:08056966140" class="btn btn-secondary">CALL</a>
+                        <a href="tel:+2348056966140" class="btn btn-secondary">CALL PRIMARY</a>
+                        <a href="tel:+2348082740475" class="btn btn-secondary">CALL SECONDARY</a>
                         <a href="mailto:heavenlyauraspa.org@gmail.com" class="btn btn-secondary">EMAIL</a>
                         <a href="https://wa.me/2348056966140?text=Hello%20Heavenly%20Aura%20Spa%2C%0A%0AI%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-primary">WHATSAPP</a>
                     </div>
@@ -1029,8 +1041,12 @@
                     <h4 class="footer-heading">CONTACT & SERVICE</h4>
                     <ul class="footer-contact-list">
                         <li>
-                            <span class="f-contact-label">Phone:</span>
-                            <a href="tel:08056966140">08056966140</a>
+                            <span class="f-contact-label">Phone & WhatsApp:</span>
+                            <a href="tel:+2348056966140">+234 805 696 6140</a>
+                        </li>
+                        <li>
+                            <span class="f-contact-label">Call Only:</span>
+                            <a href="tel:+2348082740475">+234 808 274 0475</a>
                         </li>
                         <li>
                             <span class="f-contact-label">Email:</span>
@@ -1068,6 +1084,9 @@
     </a>
 
     <!-- Scripts -->
+    <!-- EmailJS for email notifications -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="email-handler.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -492,19 +492,43 @@ function initBookingForm() {
         submitBtn.classList.add('loading');
         submitBtn.disabled = true;
 
-        // Simulate submission (in production, send to server)
-        setTimeout(() => {
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData);
+        // Get form data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
 
+        // Send email notification (requires EmailJS setup)
+        if (typeof window.sendAppointmentEmail === 'function') {
+            window.sendAppointmentEmail(data)
+                .then(result => {
+                    if (result.success) {
+                        console.log('✓ Email sent successfully to heavenlyauraspa.org@gmail.com');
+                    } else {
+                        console.warn('Email sending failed:', result.error);
+                    }
+
+                    // Show success panel regardless
+                    showSuccessPanel(data);
+                    submitBtn.classList.remove('loading');
+                    submitBtn.disabled = false;
+                })
+                .catch(error => {
+                    console.error('Email error:', error);
+                    // Still show success to user
+                    showSuccessPanel(data);
+                    submitBtn.classList.remove('loading');
+                    submitBtn.disabled = false;
+                });
+        } else {
+            // EmailJS not configured - show success anyway
             console.log('Appointment request submitted:', data);
+            console.warn('Email notifications not configured. See email-handler.js for setup.');
 
-            // Show success panel
-            showSuccessPanel(data);
-
-            submitBtn.classList.remove('loading');
-            submitBtn.disabled = false;
-        }, 1200);
+            setTimeout(() => {
+                showSuccessPanel(data);
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }, 1200);
+        }
     });
 
     function showSuccessPanel(data) {
